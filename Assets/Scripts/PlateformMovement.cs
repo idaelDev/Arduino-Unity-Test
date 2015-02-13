@@ -3,6 +3,7 @@ using System.Collections;
 
 public class PlateformMovement : MonoBehaviour {
 
+    public GameObject nextBande;
 	public bool right = true;
 	public float speed = 5f;
     public float maxX = 7f;
@@ -32,12 +33,4 @@ public class PlateformMovement : MonoBehaviour {
 
 
 
-    //void OnTriggerExit2D(Collider2D other)
-    //{
-    //    if(other.gameObject.tag == "Obstacle")
-    //    {
-
-         
-    //    }
-    //}
 }

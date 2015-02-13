@@ -4,6 +4,9 @@ using UnityEngine.UI;
 
 public class PlayerStats : MonoBehaviour {
 
+    public GameObject bande1;
+    public GameObject bande2;
+    public GameObject bande3;
 	public Text lifeText;
     public Text endText;
     public Text frogLeftText;
@@ -37,18 +40,15 @@ public class PlayerStats : MonoBehaviour {
 		{
             Death();
 		}
-		else
-		{
-			gameObject.transform.position = initPosition;
-		}
+
+        InitLevel();
 	}
 
     public void FrogSaved()
     {
         frogLeft--;
         frogLeftText.text = frogLeft + frogLeftString;
-        gameObject.transform.position = initPosition;
-        gameObject.transform.SetParent(null);
+        InitLevel();
         if(frogLeft <= 0)
         {
             Win();
@@ -70,4 +70,13 @@ public class PlayerStats : MonoBehaviour {
         endText.color = Color.red;
         endText.enabled = true;
 	}
+
+    void InitLevel()
+    {
+        gameObject.transform.position = initPosition;
+        gameObject.transform.SetParent(null);
+        bande1.SetActive(true);
+        bande2.SetActive(false);
+        bande3.SetActive(false);
+    }
 }
