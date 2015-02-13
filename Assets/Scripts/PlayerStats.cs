@@ -7,6 +7,7 @@ public class PlayerStats : MonoBehaviour {
     public GameObject bande1;
     public GameObject bande2;
     public GameObject bande3;
+    public WaterBande[] waterBandes;
 	public Text lifeText;
     public Text endText;
     public Text frogLeftText;
@@ -69,14 +70,19 @@ public class PlayerStats : MonoBehaviour {
         endText.text = gameOverText;
         endText.color = Color.red;
         endText.enabled = true;
+        InitLevel();
 	}
 
     void InitLevel()
     {
-        gameObject.transform.position = initPosition;
-        gameObject.transform.SetParent(null);
         bande1.SetActive(true);
         bande2.SetActive(false);
         bande3.SetActive(false);
+        for(int i=0; i<waterBandes.Length; i++)
+        {
+            waterBandes[i].Desactivate();
+        }
+        gameObject.transform.position = initPosition;
+        gameObject.transform.parent = null;
     }
 }

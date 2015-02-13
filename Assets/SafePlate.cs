@@ -16,7 +16,7 @@ public class SafePlate : MonoBehaviour {
         if(other.gameObject.tag == "Player")
         {
             ps.FrogSaved();
-            GetComponent<BoxCollider2D>().isTrigger = false;
+            GetComponent<AudioSource>().enabled = false;
             Instantiate(nonChar, transform.position, Quaternion.identity);
         }
     }
