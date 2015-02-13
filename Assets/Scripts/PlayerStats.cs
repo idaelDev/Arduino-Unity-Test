@@ -48,6 +48,7 @@ public class PlayerStats : MonoBehaviour {
         frogLeft--;
         frogLeftText.text = frogLeft + frogLeftString;
         gameObject.transform.position = initPosition;
+        gameObject.transform.SetParent(null);
         if(frogLeft <= 0)
         {
             Win();

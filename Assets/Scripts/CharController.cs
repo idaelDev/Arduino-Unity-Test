@@ -35,7 +35,7 @@ public class CharController : MonoBehaviour {
 		{
 			upPinValue = arduino.digitalRead(upPin);
 			gameObject.transform.Translate(new Vector3(0,upPinValue, 0));
-			transform.position = new Vector3((int)transform.position.x, transform.position.y, transform.position.z);
+            //transform.position = new Vector3((int)transform.position.x, transform.position.y, transform.position.z);
 		}
 		else
 			upPinValue = arduino.digitalRead(upPin);
@@ -43,7 +43,7 @@ public class CharController : MonoBehaviour {
 		{
 			rightPinValue = arduino.digitalRead(rightPin);
 			gameObject.transform.Translate(new Vector3(-rightPinValue,0, 0));
-			transform.position = new Vector3((int)transform.position.x, transform.position.y, transform.position.z);
+            //transform.position = new Vector3((int)transform.position.x, transform.position.y, transform.position.z);
 		}
 		else
 			rightPinValue = arduino.digitalRead(rightPin);
@@ -51,7 +51,7 @@ public class CharController : MonoBehaviour {
 		{
 			leftPinValue = arduino.digitalRead(leftPin);
 			gameObject.transform.Translate(new Vector3(leftPinValue,0, 0));
-			transform.position = new Vector3((int)transform.position.x, transform.position.y, transform.position.z);
+            //transform.position = new Vector3((int)transform.position.x, transform.position.y, transform.position.z);
 		}
 		else
 			leftPinValue = arduino.digitalRead(leftPin);
@@ -63,22 +63,22 @@ public class CharController : MonoBehaviour {
 		if(Input.GetKeyDown(KeyCode.UpArrow))
 		{
 			gameObject.transform.Translate(new Vector3(0f,1f,0f));
-			transform.position = new Vector3((int)transform.position.x, transform.position.y, transform.position.z);
+            //transform.position = new Vector3((int)transform.position.x, transform.position.y, transform.position.z);
 		}
 		if(Input.GetKeyDown(KeyCode.DownArrow))
 		{
 			gameObject.transform.Translate(new Vector3(0f,-1f,0f));
-			transform.position = new Vector3((int)transform.position.x, transform.position.y, transform.position.z);
+            //transform.position = new Vector3((int)transform.position.x, transform.position.y, transform.position.z);
 		}
 		if(Input.GetKeyDown(KeyCode.RightArrow))
 		{
 			gameObject.transform.Translate(new Vector3(1f,0f,0f));
-			transform.position = new Vector3((int)transform.position.x, transform.position.y, transform.position.z);
+            //transform.position = new Vector3((int)transform.position.x, transform.position.y, transform.position.z);
 		}
 		if(Input.GetKeyDown(KeyCode.LeftArrow))
 		{
 			gameObject.transform.Translate(new Vector3(-1f,0f,0f));
-			transform.position = new Vector3((int)transform.position.x, transform.position.y, transform.position.z);
+            //transform.position = new Vector3((int)transform.position.x, transform.position.y, transform.position.z);
 		}
 	}
 
