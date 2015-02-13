@@ -5,20 +5,20 @@ public class Plateform : MonoBehaviour {
 
 	public int size = 2;
 	public bool playerIn = false;
-	private PlateformMovement pm;
+    //private PlateformMovement pm;
 
 	void Awake()
 	{
-		pm = GetComponentInParent<PlateformMovement>();
+        //pm = GetComponentInParent<PlateformMovement>();
 	}
 
-	void OnTriggerEnter2D(Collider2D other)
+	void OnTriggerStay2D(Collider2D other)
 	{
 		if(other.gameObject.tag == "Player")
 		{
 //			pm.movePlayer = true;
 			other.gameObject.transform.SetParent(transform);
-			RoundPosition(other.gameObject);
+            //RoundPosition(other.gameObject);
 		}
 	}
 
@@ -26,7 +26,6 @@ public class Plateform : MonoBehaviour {
 	{
 		if(other.gameObject.tag == "Player")
 		{
-			pm.movePlayer = false;
 			other.gameObject.transform.SetParent(null);
 		}
 	}
