@@ -1,23 +1,23 @@
 Initialize engine version: 4.6.1f1 (d1db7a1b5196)
 GfxDevice: creating device client; threaded=1
 Direct3D:
-    Version:  Direct3D 11.0 [level 10.0]
-    Renderer: Intel(R) HD Graphics (ID=0x46)
-    Vendor:   Intel
-    VRAM:     128 MB
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA Quadro K1100M    (ID=0xff6)
+    Vendor:   NVIDIA
+    VRAM:     1957 MB
 Begin MonoManager ReloadAssembly
-Platform assembly: C:\Users\DELL\Documents\GitHub\FroggerArduino\BUILD\BlindBuild_Data\Managed\UnityEngine.dll (this message is harmless)
-Loading C:\Users\DELL\Documents\GitHub\FroggerArduino\BUILD\BlindBuild_Data\Managed\UnityEngine.dll into Unity Child Domain
-Platform assembly: C:\Users\DELL\Documents\GitHub\FroggerArduino\BUILD\BlindBuild_Data\Managed\Assembly-CSharp.dll (this message is harmless)
-Loading C:\Users\DELL\Documents\GitHub\FroggerArduino\BUILD\BlindBuild_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-Platform assembly: C:\Users\DELL\Documents\GitHub\FroggerArduino\BUILD\BlindBuild_Data\Managed\UnityEngine.UI.dll (this message is harmless)
-Loading C:\Users\DELL\Documents\GitHub\FroggerArduino\BUILD\BlindBuild_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-- Completed reload, in  0.096 seconds
-desktop: 1280x800 40Hz; virtual: 1280x800 at 0,0
+Platform assembly: C:\Users\François\Desktop\FroggerArduino\BUILD\BlindBuild_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\François\Desktop\FroggerArduino\BUILD\BlindBuild_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\François\Desktop\FroggerArduino\BUILD\BlindBuild_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\François\Desktop\FroggerArduino\BUILD\BlindBuild_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\François\Desktop\FroggerArduino\BUILD\BlindBuild_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\François\Desktop\FroggerArduino\BUILD\BlindBuild_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+- Completed reload, in  0.042 seconds
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
-Platform assembly: C:\Users\DELL\Documents\GitHub\FroggerArduino\BUILD\BlindBuild_Data\Managed\System.Core.dll (this message is harmless)
-Platform assembly: C:\Users\DELL\Documents\GitHub\FroggerArduino\BUILD\BlindBuild_Data\Managed\System.dll (this message is harmless)
+Platform assembly: C:\Users\François\Desktop\FroggerArduino\BUILD\BlindBuild_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\François\Desktop\FroggerArduino\BUILD\BlindBuild_Data\Managed\System.dll (this message is harmless)
 IOException: The port `COM4' does not exist.
   at System.IO.Ports.WinSerialStream.ReportIOError (System.String optional_arg) [0x00000] in <filename unknown>:0 
   at System.IO.Ports.WinSerialStream..ctor (System.String port_name, Int32 baud_rate, Int32 data_bits, Parity parity, StopBits sb, Boolean dtr_enable, Boolean rts_enable, Handshake hs, Int32 read_timeout, Int32 write_timeout, Int32 read_buffer_size, Int32 write_buffer_size) [0x00000] in <filename unknown>:0 
@@ -42,28 +42,4 @@ Trigger
 Trigger
  
 (Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-Trigger
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-Trigger
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-Trigger
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-Trigger
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-Trigger
- 
-(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
-
-Can not play a disabled audio source
- 
-(Filename:  Line: 377)
 
